@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan Saeed - Full Stack Developer</title>
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Particle Background -->
+    <canvas id="particles" class="particles"></canvas>
+
+    <!-- Topbar with rotating scroll using Remix Icons -->
+    <div class="topbar topbar-rotate py-2">
+        <div class="scrolling-text px-3">
+            <i class="ri-mail-line me-2"></i>
+            <a href="mailto:aryansaeed906@gmail.com" class="text-decoration-none text-white">aryansaeed906@gmail.com</a>
+            —
+
+            <i class="ri-facebook-circle-fill mx-2"></i>
+            <a href="https://www.facebook.com/share/15xBRxPdTb/" target="_blank"
+                class="text-decoration-none text-white">Facebook</a> —
+
+            <i class="ri-instagram-line mx-2"></i>
+            <a href="https://www.instagram.com/aryandeveloper09?igsh=N2t2dmtwMDdjZm55" target="_blank"
+                class="text-decoration-none text-white">Instagram</a> —
+
+            <i class="ri-github-fill mx-2"></i>
+            <a href="https://github.com/Aryansaeed09" target="_blank" class="text-decoration-none text-white">GitHub</a>
+            —
+
+            <span>Let's build something great together!</span>
+        </div>
+    </div>
+
+
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Aryan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link nav-hover active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#my-work">My Work</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="d-none ms-3">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- Text -->
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="hero-title">Hi, I'm Aryan Saeed</h1>
+                    <p class="hero-subtitle">
+                        A Full Stack Developer skilled in Laravel, PHP, JavaScript, MySQL, and Bootstrap.<br />
+                        I build secure, modern, and responsive web applications.
+                    </p>
+                    <a href="#contact" class="btn btn-custom">Let's Work Together</a>
+                </div>
+
+                <!-- Image -->
+                <div class="col-md-6 text-center hero-img">
+                    <img src="./images/ar.png" alt="Aryan Saeed" class="img-fluid floating" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience & Clients Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experience & Stats</h2>
+            <div class="row text-center g-4">
+
+                <div class="col-md-3">
+                    <div class="card card-3d p-4 hover-grow delay-1">
+                        <i class="ri-user-smile-line ri-2x mb-3 gradient-text"></i>
+                        <h3 class="mb-0"><span class="counter" data-count="50">0</span>+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-3d p-4 hover-grow delay-2">
+                        <i class="ri-checkbox-circle-line ri-2x mb-3 gradient-text"></i>
+                        <h3 class="mb-0"><span class="counter" data-count="70">0</span>+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-3d p-4 hover-grow delay-3">
+                        <i class="ri-award-line ri-2x mb-3 gradient-text"></i>
+                        <h3 class="mb-0"><span class="counter" data-count="5">0</span>+</h3>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-3d p-4 hover-grow">
+                        <i class="ri-briefcase-line ri-2x mb-3 gradient-text"></i>
+                        <h3 class="mb-0"><span class="counter" data-count="1">0</span>+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">My Services</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Web Development -->
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 text-center p-0 overflow-hidden hover-grow">
+                        <div class="bg-gradient p-4"
+                            style="background: linear-gradient(135deg, #6e48aa 60%, #9d50bb 100%);">
+                            <i class="ri-code-s-slash-line service-icon floating"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title gradient-text mb-3">Web Development</h4>
+                            <p class="card-text mb-4">
+                                Custom websites and web apps, from landing pages to complex solutions. Fast, responsive,
+                                and SEO-optimized.
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2">
+                                <span class="badge rounded-pill bg-primary">Frontend</span>
+                                <span class="badge rounded-pill bg-secondary">Backend</span>
+                                <span class="badge rounded-pill bg-success">E-commerce</span>
+                                <span class="badge rounded-pill bg-info text-dark">CMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Design -->
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 text-center p-0 overflow-hidden hover-grow">
+                        <div class="bg-gradient p-4"
+                            style="background: linear-gradient(135deg, #9d50bb 60%, #4776E6 100%);">
+                            <i class="ri-brush-line service-icon floating"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title gradient-text mb-3">Logo Design</h4>
+                            <p class="card-text mb-4">
+                                Unique, memorable logos that reflect your brand. Stand out with professional identity
+                                design.
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2">
+                                <span class="badge rounded-pill bg-warning text-dark">Branding</span>
+                                <span class="badge rounded-pill bg-danger">Vector</span>
+                                <span class="badge rounded-pill bg-dark">Guidelines</span>
+                                <span class="badge rounded-pill bg-light text-dark">Concepts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 text-center p-0 overflow-hidden hover-grow">
+                        <div class="bg-gradient p-4"
+                            style="background: linear-gradient(135deg, #4776E6 60%, #6e48aa 100%);">
+                            <i class="ri-video-line service-icon floating"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title gradient-text mb-3">Video Editing</h4>
+                            <p class="card-text mb-4">
+                                Engaging video edits for social media, ads, and business. Motion graphics and color
+                                grading included.
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2">
+                                <span class="badge rounded-pill bg-info text-dark">Social Media</span>
+                                <span class="badge rounded-pill bg-success">Commercials</span>
+                                <span class="badge rounded-pill bg-primary">Motion Graphics</span>
+                                <span class="badge rounded-pill bg-secondary">Color Grading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">My Skills</h2>
+            <div class="row g-4">
+
+                <!-- Technical Skills -->
+                <div class="col-lg-6">
+                    <div class="card card-3d p-4 h-100">
+                        <h3 class="mb-4 gradient-text">Technical Skills</h3>
+
+                        <!-- Skill Item -->
+                        <div class="skill-item mb-4">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-html5-line me-2" style="color:#e44d26;"></i>HTML /
+                                    CSS</span><span>99%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 99%; height: 8px; background: linear-gradient(90deg, #e44d26, #f16529);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-javascript-line me-2"
+                                        style="color:#f7df1e;"></i>JavaScript</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 85%; height: 8px; background: linear-gradient(90deg, #f7df1e, #ffe484);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-code-box-line me-2" style="color:#6e48aa;"></i>PHP /
+                                    Laravel</span><span>95%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 95%; height: 8px; background: linear-gradient(90deg, #8993be, #6e48aa);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-database-2-line me-2"
+                                        style="color:#00758f;"></i>MySQL</span><span>97%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 97%; height: 8px; background: linear-gradient(90deg, #00758f, #6e48aa);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="col-lg-6">
+                    <div class="card card-3d p-4 h-100">
+                        <h3 class="mb-4 gradient-text">Other Skills</h3>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-scissors-cut-line me-2" style="color:#ff4e50;"></i>Video
+                                    Editing</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 75%; height: 8px; background: linear-gradient(90deg, #ff4e50, #f9d423);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-brush-line me-2" style="color:#9d50bb;"></i>Logo
+                                    Design</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 85%; height: 8px; background: linear-gradient(90deg, #9d50bb, #4776E6);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-file-word-line me-2" style="color:#2b579a;"></i>MS
+                                    Office</span><span>95%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 95%; height: 8px; background: linear-gradient(90deg, #2b579a, #6e48aa);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name d-flex justify-content-between align-items-center">
+                                <span><i class="ri-task-line me-2" style="color:#43cea2;"></i>Project
+                                    Management</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar bg-light bg-opacity-10 rounded-pill">
+                                <div class="skill-progress rounded-pill"
+                                    style="width: 80%; height: 8px; background: linear-gradient(90deg, #43cea2, #185a9d);">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- My Work Section - Enhanced Style -->
+    <section id="my-work" class="py-5 position-relative">
+        <!-- Animated background elements -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-n1">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-grid"></div>
+        </div>
+
+        <div class="container position-relative">
+            <h2 class="section-title text-center mb-5">
+                <span class="title-text">My Creative Work</span>
+                <span class="title-shadow">Portfolio</span>
+            </h2>
+
+            <!-- Animated filter chips -->
+            <div class="text-center mb-5">
+                <div class="filter-chips">
+                    <button type="button" class="filter-chip active" data-filter="all">
+                        <span class="chip-text">All Projects</span>
+                        <span class="chip-count">6</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-filter="fullstack">
+                        <span class="chip-icon"><i class="ri-stack-line"></i></span>
+                        <span class="chip-text">Fullstack</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-filter="frontend">
+                        <span class="chip-icon"><i class="ri-palette-line"></i></span>
+                        <span class="chip-text">Frontend</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-filter="backend">
+                        <span class="chip-icon"><i class="ri-server-line"></i></span>
+                        <span class="chip-text">Backend</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-filter="design">
+                        <span class="chip-icon"><i class="ri-brush-line"></i></span>
+                        <span class="chip-text">Design</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4 justify-content-center project-container">
+
+                <!-- Project 1 - Fullstack -->
+                <div class="col-lg-4 col-md-6 project-item fullstack">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                                alt="E-commerce Platform" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-badges">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Fullstack Development</span>
+                                <span class="project-date">2023</span>
+                            </div>
+                            <h3 class="project-title">Modern E-commerce Platform</h3>
+                            <p class="project-description">Complete online store with product management, cart system,
+                                and Stripe integration.</p>
+                            <div class="project-actions">
+                                <a href="#" class="project-link">
+                                    <i class="ri-external-link-line"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="ri-github-line"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Frontend -->
+                <div class="col-lg-4 col-md-6 project-item frontend">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/frontend.jpg" alt="Analytics Dashboard" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-badges">
+                                    <span class="badge">React</span>
+                                    <span class="badge">Chart.js</span>
+                                    <span class="badge">Tailwind</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Frontend Development</span>
+                                <span class="project-date">2023</span>
+                            </div>
+                            <h3 class="project-title">Interactive Analytics Dashboard</h3>
+                            <p class="project-description">Beautiful data visualization with real-time updates and
+                                custom widgets.</p>
+                            <div class="project-actions">
+                                <a href="#" class="project-link">
+                                    <i class="ri-external-link-line"></i>
+                                    <span>View Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Backend -->
+                <div class="col-lg-4 col-md-6 project-item backend">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/api.jpg" alt="API Service" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-badges">
+                                    <span class="badge">Node.js</span>
+                                    <span class="badge">Express</span>
+                                    <span class="badge">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Backend Development</span>
+                                <span class="project-date">2023</span>
+                            </div>
+                            <h3 class="project-title">RESTful API Service</h3>
+                            <p class="project-description">Scalable API with JWT authentication, rate limiting, and
+                                documentation.</p>
+                            <div class="project-actions">
+                                <a href="#" class="project-link">
+                                    <i class="ri-github-line"></i>
+                                    <span>API Docs</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Design -->
+                <div class="col-lg-4 col-md-6 project-item design">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                                alt="Brand Identity" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-badges">
+                                    <span class="badge">Illustrator</span>
+                                    <span class="badge">Photoshop</span>
+                                    <span class="badge">Branding</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Brand Design</span>
+                                <span class="project-date">2023</span>
+                            </div>
+                            <h3 class="project-title">Brand Identity Packages</h3>
+                            <p class="project-description">Complete branding solutions including logos, color palettes,
+                                and style guides.</p>
+                            <div class="project-actions">
+                                <a href="#" class="project-link">
+                                    <i class="ri-image-line"></i>
+                                    <span>View Portfolio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Fullstack -->
+                <div class="col-lg-4 col-md-6 project-item fullstack">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/igor-miske-Px3iBXV-4TU-unsplash.jpg" alt="Social Platform"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-badges">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">Vue.js</span>
+                                    <span class="badge">WebSockets</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Fullstack Development</span>
+                                <span class="project-date">2023</span>
+                            </div>
+                            <h3 class="project-title">Community Social Platform</h3>
+                            <p class="project-description">Social network with real-time chat, notifications, and
+                                content moderation.</p>
+                            <div class="project-actions">
+                                <a href="#" class="project-link">
+                                    <i class="ri-external-link-line"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="ri-github-line"></i>
+                                    <span>Client Repo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Frontend -->
+                <div class="col-lg-4 col-md-6 project-item frontend">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                                alt="Weather App" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-badges">
+                                    <span class="badge">React Native</span>
+                                    <span class="badge">SVG</span>
+                                    <span class="badge">Animations</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Mobile Frontend</span>
+                                <span class="project-date">2023</span>
+                            </div>
+                            <h3 class="project-title">Weather App UI</h3>
+                            <p class="project-description">Beautiful weather application with animated SVGs and smooth
+                                transitions.</p>
+                            <div class="project-actions">
+                                <a href="#" class="project-link">
+                                    <i class="ri-smartphone-line"></i>
+                                    <span>App Preview</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn-view-more">
+                    <span>Explore More Projects</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Blog / Articles Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Latest Blog Posts</h2>
+            <div class="row g-4">
+
+                <!-- Blog Post 1 -->
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 border-0 shadow-lg blog-card hover-grow">
+                        <img src="./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" class="card-img-top" alt="Blog 1"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title gradient-text">Top Laravel Tips for 2025</h5>
+                            <p class="card-text">Level up your Laravel development with performance,
+                                security, and maintainability hacks.</p>
+                            <a href="#" class="btn btn-custom mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 border-0 shadow-lg blog-card hover-grow">
+                        <img src="./images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" class="card-img-top" alt="Blog 2"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title gradient-text">UI/UX Tips for Bootstrap 5</h5>
+                            <p class="card-text">Learn how to design better user interfaces using Bootstrap 5
+                                and glass effects.</p>
+                            <a href="#" class="btn btn-custom mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-4">
+                    <div class="card card-3d h-100 border-0 shadow-lg blog-card hover-grow">
+                        <img src="./images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" class="card-img-top" alt="Blog 3"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title gradient-text">Mastering MySQL Queries</h5>
+                            <p class="card-text">Write efficient queries and structure your database for
+                                real-world performance.</p>
+                            <a href="#" class="btn btn-custom mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Premium 6-Client Testimonial Section -->
+    <section id="testimonials" class="testimonial-section py-6">
+        <div class="testimonial-container">
+            <!-- Floating decorative elements -->
+            <div class="testimonial-orb orb-1"></div>
+            <div class="testimonial-orb orb-2"></div>
+            <div class="testimonial-orb orb-3"></div>
+
+            <h2 class="section-title text-center mb-6">
+                <span class="title-text">Client Success Stories</span>
+                <span class="title-shadow">Testimonials</span>
+            </h2>
+
+            <div class="testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card elite-card">
+                    <div class="client-meta">
+                        <div class="client-avatar glow">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Hassan Raza" loading="lazy">
+                            <div class="verified-badge">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Hassan Raza</h3>
+                            <p class="client-title">CEO, DigitalPak</p>
+                            <div class="client-rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                                <span class="rating-text">4.8/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="ri-double-quotes-l quote-icon"></i>
+                        <p class="testimonial-text">Aryan transformed our e-commerce platform with flawless execution.
+                            The attention to detail and innovative solutions resulted in a 40% increase in conversion
+                            rates. His technical expertise is matched only by his creative problem-solving.</p>
+                        <div class="testimonial-footer">
+                            <div class="company-logo">
+                                <img src="https://logo.clearbit.com/digitalpak.com" alt="DigitalPak" loading="lazy">
+                            </div>
+                            <div class="project-details">
+                                <span class="project-tag">E-commerce Platform</span>
+                                <span class="project-date">Completed: Jan 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlight"></div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card elite-card">
+                    <div class="client-meta">
+                        <div class="client-avatar glow">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sana Malik" loading="lazy">
+                            <div class="verified-badge">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Sana Malik</h3>
+                            <p class="client-title">Product Director, UIVerse</p>
+                            <div class="client-rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span class="rating-text">5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="ri-double-quotes-l quote-icon"></i>
+                        <p class="testimonial-text">Working with Aryan on our design system was a revelation. He
+                            delivered pixel-perfect components with comprehensive documentation ahead of schedule. His
+                            Vue.js implementation reduced our bundle size by 35% while improving performance.</p>
+                        <div class="testimonial-footer">
+                            <div class="company-logo">
+                                <img src="https://logo.clearbit.com/uiverse.io" alt="UIVerse" loading="lazy">
+                            </div>
+                            <div class="project-details">
+                                <span class="project-tag">Design System</span>
+                                <span class="project-date">Completed: Mar 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlight"></div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card elite-card">
+                    <div class="client-meta">
+                        <div class="client-avatar glow">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Ali Akbar" loading="lazy">
+                            <div class="verified-badge">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Ali Akbar</h3>
+                            <p class="client-title">CTO, Learnify</p>
+                            <div class="client-rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <span class="rating-text">4.2/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="ri-double-quotes-l quote-icon"></i>
+                        <p class="testimonial-text">Aryan's API optimization reduced our server costs by 60% while
+                            improving response times. His MySQL expertise helped us scale to handle 10x more concurrent
+                            users. The documentation was so thorough our team could immediately build on his work.</p>
+                        <div class="testimonial-footer">
+                            <div class="company-logo">
+                                <img src="https://logo.clearbit.com/learnify.com" alt="Learnify" loading="lazy">
+                            </div>
+                            <div class="project-details">
+                                <span class="project-tag">API Optimization</span>
+                                <span class="project-date">Completed: Nov 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlight"></div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card elite-card">
+                    <div class="client-meta">
+                        <div class="client-avatar glow">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fatima Khan"
+                                loading="lazy">
+                            <div class="verified-badge">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Fatima Khan</h3>
+                            <p class="client-title">Marketing Director, BrandVista</p>
+                            <div class="client-rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span class="rating-text">5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="ri-double-quotes-l quote-icon"></i>
+                        <p class="testimonial-text">Aryan's rebranding of our corporate identity was transformative. He
+                            delivered a complete visual language that elevated our market position. The brand guidelines
+                            he created are now used company-wide across all departments.</p>
+                        <div class="testimonial-footer">
+                            <div class="company-logo">
+                                <img src="https://logo.clearbit.com/brandvista.com" alt="BrandVista" loading="lazy">
+                            </div>
+                            <div class="project-details">
+                                <span class="project-tag">Brand Identity</span>
+                                <span class="project-date">Completed: Aug 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlight"></div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card elite-card">
+                    <div class="client-meta">
+                        <div class="client-avatar glow">
+                            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Omar Sheikh" loading="lazy">
+                            <div class="verified-badge">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Omar Sheikh</h3>
+                            <p class="client-title">Founder, TechNova</p>
+                            <div class="client-rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                                <span class="rating-text">4.7/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="ri-double-quotes-l quote-icon"></i>
+                        <p class="testimonial-text">The mobile app Aryan developed for our startup exceeded all
+                            expectations. His React Native implementation delivers native-like performance across both
+                            platforms. User retention increased by 45% after launch due to the flawless UX.</p>
+                        <div class="testimonial-footer">
+                            <div class="company-logo">
+                                <img src="https://logo.clearbit.com/technova.com" alt="TechNova" loading="lazy">
+                            </div>
+                            <div class="project-details">
+                                <span class="project-tag">Mobile Application</span>
+                                <span class="project-date">Completed: May 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlight"></div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card elite-card">
+                    <div class="client-meta">
+                        <div class="client-avatar glow">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Leila Abbas"
+                                loading="lazy">
+                            <div class="verified-badge">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h3 class="client-name">Leila Abbas</h3>
+                            <p class="client-title">Head of Digital, GlobalEdge</p>
+                            <div class="client-rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span class="rating-text">5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="ri-double-quotes-l quote-icon"></i>
+                        <p class="testimonial-text">Aryan's video editing for our product launch campaign was
+                            exceptional. He transformed raw footage into compelling stories that increased engagement by
+                            300%. His motion graphics work set a new standard for our marketing team.</p>
+                        <div class="testimonial-footer">
+                            <div class="company-logo">
+                                <img src="https://logo.clearbit.com/globaledge.com" alt="GlobalEdge" loading="lazy">
+                            </div>
+                            <div class="project-details">
+                                <span class="project-tag">Video Production</span>
+                                <span class="project-date">Completed: Feb 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlight"></div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="carousel-nav">
+                <button class="nav-arrow prev-arrow">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <div class="carousel-dots"></div>
+                <button class="nav-arrow next-arrow">
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item custom-faq-item mb-3">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="ri-question-line me-2 gradient-text"></i>
+                                    What services do you offer as a Full Stack Developer?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I offer comprehensive full stack development services including:
+                                    <ul class="mt-2">
+                                        <li>Frontend development with HTML5, CSS3, JavaScript, and frameworks like React
+                                        </li>
+                                        <li>Backend development with PHP, Laravel, Node.js, and Python</li>
+                                        <li>Database design and management with MySQL, MongoDB</li>
+                                        <li>RESTful API development and integration</li>
+                                        <li>Responsive web design and mobile-first development</li>
+                                        <li>Website maintenance and optimization</li>
+                                    </ul>
+                                    Each project is customized to meet specific client needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item custom-faq-item mb-3">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="ri-question-line me-2 gradient-text"></i>
+                                    What is your typical project workflow?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    My development process follows these key stages:
+                                    <ol class="mt-2">
+                                        <li><strong>Discovery:</strong> Requirement analysis and planning</li>
+                                        <li><strong>Design:</strong> Wireframing and UI/UX prototyping</li>
+                                        <li><strong>Development:</strong> Agile implementation with weekly updates</li>
+                                        <li><strong>Testing:</strong> Comprehensive quality assurance</li>
+                                        <li><strong>Deployment:</strong> Launch with full documentation</li>
+                                        <li><strong>Maintenance:</strong> Ongoing support and updates</li>
+                                    </ol>
+                                    I maintain transparent communication throughout the entire process.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item custom-faq-item mb-3">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="ri-question-line me-2 gradient-text"></i>
+                                    How do you ensure website security?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Security is a top priority in all my projects. I implement:
+                                    <div class="row mt-2">
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>Secure authentication systems</li>
+                                                <li>Data encryption (SSL/TLS)</li>
+                                                <li>Regular security audits</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>Protection against XSS, CSRF, and SQL injection</li>
+                                                <li>Regular software updates</li>
+                                                <li>Secure payment gateways for e-commerce</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    I stay updated with the latest security best practices and compliance standards.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item custom-faq-item mb-3">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="ri-question-line me-2 gradient-text"></i>
+                                    What are your rates and payment terms?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    My pricing structure is flexible based on project requirements:
+                                    <table class="table mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Project Type</th>
+                                                <th>Pricing Model</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Small websites</td>
+                                                <td>Fixed project rate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Medium projects</td>
+                                                <td>Milestone payments</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Large applications</td>
+                                                <td>Hourly rate or monthly retainer</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    I offer free initial consultations and provide detailed quotes after understanding
+                                    project scope.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item custom-faq-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="ri-question-line me-2 gradient-text"></i>
+                                    How can I get started with a project?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Starting a project is simple:
+                                    <div class="d-flex align-items-start mt-3">
+                                        <div class="me-4 text-center">
+                                            <div
+                                                class="bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block mb-2">
+                                                <i class="ri-mail-line fs-4 gradient-text"></i>
+                                            </div>
+                                            <p class="small">Contact Me</p>
+                                        </div>
+                                        <div class="me-4 text-center">
+                                            <div
+                                                class="bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block mb-2">
+                                                <i class="ri-calendar-check-line fs-4 gradient-text"></i>
+                                            </div>
+                                            <p class="small">Schedule Meeting</p>
+                                        </div>
+                                        <div class="me-4 text-center">
+                                            <div
+                                                class="bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block mb-2">
+                                                <i class="ri-lightbulb-flash-line fs-4 gradient-text"></i>
+                                            </div>
+                                            <p class="small">Discuss Ideas</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div
+                                                class="bg-primary bg-opacity-10 rounded-circle p-3 d-inline-block mb-2">
+                                                <i class="ri-rocket-line fs-4 gradient-text"></i>
+                                            </div>
+                                            <p class="small">Project Kickoff</p>
+                                        </div>
+                                    </div>
+                                    <a href="#contact" class="btn btn-custom mt-3">Get in Touch Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-3d p-4 shadow-lg border-0">
+                        <form action="#" method="POST">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" class="form-control bg-transparent"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control bg-transparent"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject"
+                                            class="form-control bg-transparent" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="5"
+                                            class="form-control bg-transparent" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-custom px-5 mt-3">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- About -->
+                <div class="col-md-4">
+                    <h4 class="gradient-text mb-3">Aryan Saeed</h4>
+                    <p>
+                        Full Stack Developer specializing in modern web technologies, delivering performance-driven
+                        applications and creative designs.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="mb-3 text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#my-work">My Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-md-4">
+                    <h5 class="mb-3 text-uppercase">Get in Touch</h5>
+                    <p><i class="ri-mail-line me-2"></i> <a href="mailto:aryansaeed906@gmail.com"
+                            class="text-white text-decoration-none">aryansaeed906@gmail.com</a></p>
+                    <p><i class="ri-phone-line me-2"></i> <a href="tel:+923293751706"
+                            class="text-white text-decoration-none">+92 329 3751706</a></p>
+
+                    <div class="social-icons mt-3">
+                        <a href="https://facebook.com/share/15xBRxPdTb/" target="_blank"><i
+                                class="ri-facebook-circle-fill ri-xl me-3"></i></a>
+                        <a href="https://github.com/Aryansaeed09" target="_blank"><i
+                                class="ri-github-fill ri-xl me-3"></i></a>
+                        <a href="https://www.instagram.com/aryandeveloper09?igsh=N2t2dmtwMDdjZm55" target="_blank"><i
+                                class="ri-instagram-line ri-xl me-3"></i></a>
+                        <a href="https://wa.me/923293751706" target="_blank"><i
+                                class="ri-whatsapp-fill ri-xl me-3"></i></a>
+                        <a href="https://m.me/muhammad.aryan.492902" target="_blank"><i
+                                class="ri-messenger-fill ri-xl me-3"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5" />
+            <p class="text-center mb-0">&copy; 2025 Aryan Saeed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button with Remix Icons -->
+    <div class="contact-float">
+        <div class="contact-options" id="contactOptions">
+            <a href="https://wa.me/923293751706" class="contact-option whatsapp" target="_blank">
+                <i class="ri-whatsapp-fill"></i>
+            </a>
+            <a href="https://m.me/muhammad.aryan.492902" class="contact-option messenger" target="_blank">
+                <i class="ri-messenger-fill"></i>
+            </a>
+            <a href="mailto:aryansaeed906@gmail.com" class="contact-option email">
+                <i class="ri-mail-send-fill"></i>
+            </a>
+        </div>
+        <div class="contact-btn" id="contactBtn">
+            <i class="ri-chat-3-fill"></i>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome for theme toggle icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+    <!-- Scroll Reveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>
+
+</html>
